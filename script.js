@@ -31,18 +31,11 @@ function displayBooks(book) {
   removeBtn.type = "submit";
   removeBtn.innerText = "Remove";
 
-  // row.innerHTML = `<td>${book.author}<td><td>${book.pages}<td><td>${book.read}<td>`
-  // above code I formatting was weird, will try back using this code
 
   row.appendChild(createTitle);
   row.appendChild(createAuthor);
   row.appendChild(removeBtn);
-  //   row.appendChild(createRemove)
-  //   row.appendChild(createPages)
-  //   row.appendChild(createStatus)
   list.appendChild(row);
-
-  //   createTitle.classList.add('deleteRow')
 }
 
 // Event Listeners:
