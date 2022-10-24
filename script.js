@@ -66,7 +66,7 @@ list.addEventListener('click', (e) => {
     // console.log(eachIndex)
     libraryList.forEach((Book, index) => {
       if (index === eachIndex) {
-        libraryList.splice[eachIndex-1];
+        libraryList.splice[eachIndex];
       }
     });
     localStorage.setItem('libraryList', JSON.stringify(libraryList));
