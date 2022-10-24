@@ -4,13 +4,11 @@ const list = document.querySelector("#bookList");
 const bookTitle = document.querySelector("#inputTitle");
 const bookAuthor = document.querySelector("#inputAuthor");
 
-// Constructor to create book objects:
 function Book(title, author) {
   this.title = title;
   this.author = author;
 }
 
-// New book objects are stored in an array:
 function addBookToLibrary() {
   if (bookTitle.value !== "" && bookAuthor.value !== "") {
     libraryList.push(new Book(bookTitle.value, bookAuthor.value));
@@ -19,7 +17,6 @@ function addBookToLibrary() {
   }
 }
 
-// Display book:
 function displayBooks(book) {
   const row = document.createElement("tr");
   const createTitle = document.createElement("th");
@@ -31,14 +28,12 @@ function displayBooks(book) {
   removeBtn.type = "submit";
   removeBtn.innerText = "Remove";
 
-
   row.appendChild(createTitle);
   row.appendChild(createAuthor);
   row.appendChild(removeBtn);
   list.appendChild(row);
 }
 
-// Event Listeners:
 submit.addEventListener("click", (e) => {
   e.preventDefault();
   addBookToLibrary();
@@ -48,7 +43,6 @@ submit.addEventListener("click", (e) => {
   bookAuthor.value = "";
 });
 
-// Remove books:
 list.addEventListener("click", (e) => {
   if (e.target.classList.contains("remove-btn")) {
     e.target.parentElement.remove();
