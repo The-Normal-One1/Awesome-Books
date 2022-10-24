@@ -46,12 +46,9 @@ submit.addEventListener("click", (e) => {
 list.addEventListener("click", (e) => {
   if (e.target.classList.contains("remove-btn")) {
     e.target.parentElement.remove();
-    const eachIndex = e.target.parentElement.rowIndex - 1;
-    libraryList.forEach((Book, index) => {
-      if (index === eachIndex) {
-        libraryList.splice[eachIndex];
-      }
-    });
+    const newAwesemBook = libraryList.filter(
+        (ele) => ele.Title !== e.target.parentElement.children[0].innerText,
+      );
     localStorage.setItem("libraryList", JSON.stringify(libraryList));
-  }
+}
 });
