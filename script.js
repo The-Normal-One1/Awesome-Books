@@ -1,4 +1,4 @@
-const libraryList = [];
+let libraryList = [];
 const submit = document.querySelector('#submit');
 const list = document.querySelector('#bookList');
 const bookTitle = document.querySelector('#inputTitle');
@@ -46,6 +46,15 @@ submit.addEventListener('click', (e) => {
 list.addEventListener('click', (e) => {
   if (e.target.classList.contains('remove-btn')) {
     e.target.parentElement.remove();
-    localStorage.setItem('libraryList', JSON.stringify(libraryList));
+    libraryList = libraryList.filter(({ title }) => e.target.parentElement.firstChild.innerText
+    !== title);
+    localStorage.setItem('libraryLists', JSON.stringify(libraryList));
   }
 });
+
+if (localStorage.getItem('libraryLists')) {
+  JSON.parse(localStorage.getItem('libraryLists')).forEach((book) => {
+    displayBooks(book);
+    libraryList.push(book);
+  });
+}
