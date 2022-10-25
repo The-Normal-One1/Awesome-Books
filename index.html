@@ -12,7 +12,7 @@
 <body>
     <div class="container">
         <h1>Awosome Book Lists</h1>
-        <table>
+        <table class="table">
             <thead>
                 <tr>
                     <th>Title</th>
@@ -22,13 +22,13 @@
                 <thead> <br>
                 <tbody id="bookList"></tbody>
         </table> <br>
-        <div id="enter">
-            <input type="text" id="inputTitle" placeholder="Title"></br><br>
-            <input type="text" id="inputAuthor" placeholder="Author"></br><br>
+        <form id="enter">
+            <input type="text" id="title" placeholder="Title"></br><br>
+            <input type="text" id="author" placeholder="Author"></br><br>
             <div id=submit>
-                <button id="submit" type="button">Submit</button>
+                <button id="submit" type="submit">Submit</button>
             </div>
-        </div>
+        </form>
         <script src="script.js">
         </script>
 </body>
