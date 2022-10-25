@@ -18,40 +18,30 @@ class Book {
       const list = document.querySelector('#bookList');
 
       const row = document.createElement('tr');
+      row.classList.add('row');
 
       const createTitle = document.createElement('th');
       const createAuthor = document.createElement('th');
       createTitle.innerHTML = book.title;
       createAuthor.innerHTML = book.author;
+      const createButton = document.createElement('th');
       const removeBtn = document.createElement('button');
       removeBtn.classList.add('remove-btn');
       removeBtn.type = 'submit';
       removeBtn.innerText = 'Remove';
+      createButton.appendChild(removeBtn);
 
       row.appendChild(createTitle);
       row.appendChild(createAuthor);
-      row.appendChild(removeBtn);
+      row.appendChild(createButton);
       list.appendChild(row);
     }
 
     static deleteBook(el) {
       if(el.classList.contains('remove-btn')) {
-        el.parentElement.remove();
+        el.parentElement.parentElement.remove();
       }
     }
-
-    // <div class="alert alert success">Message</div>
-
-    // static showAlert(message, className) {
-    //   const div = document.createElement('div');
-    //   div.className = `alert`;
-    //   div.appendChild(document.createTextNode(message));
-    //   const container = document.querySelector('.container');
-    //   const table = document.querySelector('.table');
-    //   container.insertBefore(div, table);
-    //   // vanishing 2 second
-    //   setTimeout(() => document.querySelector('.alert').remove(), 2000);
-    // }
 
     static clearfields() {
       document.querySelector('#title').value = '';
@@ -127,5 +117,5 @@ document.querySelector('#bookList').addEventListener('click', (e) => {
   UI.deleteBook(e.target);
 
   // remove books form store
-  Store.removeBook(e.target.previousElementSibling.textContent);
+  Store.removeBook(e.target.parentElement.previousElementSibling.textContent);
 })
