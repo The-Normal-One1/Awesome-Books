@@ -10,11 +10,11 @@
 
 ## Live Demo
 
-Please: [Here](https://the-normal-one1.github.io/Awesome-Books/)
+Please: Click [Here](https://the-normal-one1.github.io/Awesome-Books/)
 
 ## Getting Started
 
-To get a local copy up and run git clone https://github.com/The-Normal-One1/Visit-Ethiopia and follow these steps.
+To get a local copy up and run git clone https://github.com/The-Normal-One1/Awesome-Books and follow these steps.
 
 ### Open file in the VS code
 
