@@ -30,6 +30,7 @@ th {
   border-collapse: collapse;
   box-shadow: 1px 2px black;
 }
+
 .table {
   margin-bottom: 15px;
 }
@@ -81,7 +82,6 @@ tr:nth-child(even) {
   width: 6rem;
   border-color: black;
   box-shadow: 2px 4px black;
-  /* margin-right: 0.625rem; */
   align-self: flex-end;
   height: 25px;
 }
