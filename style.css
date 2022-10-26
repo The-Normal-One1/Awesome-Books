@@ -8,8 +8,8 @@
   display: flex;
   flex-direction: column;
   margin-top: 40px;
-  margin-left: 20%;
-  margin-right: 20%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 h1 {
@@ -72,7 +72,7 @@ tr:nth-child(even) {
 
 #title,
 #author {
-  height: 25px;
+  height: 45px;
   padding: 5px;
   border: 1px solid rgb(49, 49, 49);
   box-shadow: 1px 2px black;
@@ -88,4 +88,83 @@ tr:nth-child(even) {
 
 #submit:hover {
   cursor: pointer;
+}
+
+/* for the nav section*/
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  border: 1px solid rebeccapurple;
+  align-items: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  height: 40px;
+  box-shadow: 4px 4px black;
+}
+
+.logo {
+  border: 1px solid red;
+  margin-left: 15px;
+  font-weight: bold;
+}
+
+.list-items {
+  display: flex;
+  gap: 20px;
+  list-style-type: none;
+  margin-right: 15px;
+  border: 1px solid blue;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.list-link,
+.add-link {
+  border-right: 1.75px solid black;
+  padding-right: 5px;
+}
+
+.list-link,
+.add-link,
+.contact-link {
+  font-weight: bold;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 50px;
+}
+
+.contact h1 {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.contact p {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.contact ul li {
+  margin-left: 35px;
+  font-size: 20px;
+}
+
+footer {
+  border: 1px solid black;
+  box-shadow: 4px 4px black;
+  margin-bottom: 10px;
+  margin-left: 10%;
+  margin-right: 10%;
+  height: 40px;
+  position: relative;
+  top: 100%;
 }
