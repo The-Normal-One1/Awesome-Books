@@ -1,37 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book list</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-    <div class="container">
-        <h1>Awosome Book</h1> <hr>
-        <table class="table">
-            <thead>
-                <tr>
-                    <th>Title</th>
-                    <th>Author</th>
-                    <th></th>
-                </tr>
-                <thead> <br>
-                <tbody id="bookList"></tbody>
-        </table> <br> <hr>
-        <form id="enter">
-            <h1>Add books</h1>
-            <input type="text" id="title" placeholder="Title"></br>
-            <input type="text" id="author" placeholder="Author"></br>
-            <div id=submit>
-                <button id="submit" type="submit">Submit</button>
-            </div>
-        </form>
-        <script src="script.js">
-        </script>
-</body>
-
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="style.css"/>
+        <title>Book list</title>
+    </head>
+    <body>
+        <nav>
+            <div class="logo"><a href="#">Awesome Books</a></div>
+            <ul class="list-items">
+                <li class="book-list"><a class="list-link" href="#">List</a></li>
+                <li class="add-book"><a class="add-link" href="#">Add new</a></li>
+                <li class="contact-list"><a class="contact-link" href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <p class="time"></p>
+        <div class="container">
+            <h1>Awosome Book</h1><hr>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th></th>
+                    </tr>
+                <thead><br>
+                <tbody id="bookList">
+                </tbody>
+            </table><br><hr>
+            <form id="enter">
+                <h1>Add books</h1>
+                <input type="text" id="title" placeholder="Title"/></br>
+                <input type="text" id="author" placeholder="Author"/></br>
+                <div id=submit>
+                    <button id="submit" type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+        <section class="contact">
+            <h2>Contact information</h2>
+            <p>Do you have any question or you want to say "Hello"&quest;<br>you can reach out to us!</p>
+            <ul><li>Our email: mail@mail.com</li>
+                <li>Our phone number: +2519743748793</li>
+                <li>Our adress: Algeria st. 22,840645 Addis, Nigeria</li>
+            </ul>
+        </section>
+       <footer>
+           <p class="copy-right">copyright   ...</p>
+       </footer>
+        <script src="script.js"></script>
+    </body>
 </html>
