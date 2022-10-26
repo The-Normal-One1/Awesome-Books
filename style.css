@@ -41,7 +41,7 @@ th {
 }
 
 tr:nth-child(even) {
-  background-color: rgb(170, 169, 169);
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .remove-btn {
@@ -86,13 +86,13 @@ tr:nth-child(even) {
   cursor: pointer;
 }
 
-/* for the nav section*/
+/* for the nav section */
 
 nav {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
-  border: 1px solid rebeccapurple;
+  border: 1px solid black;
   align-items: center;
   margin-left: 10%;
   margin-right: 10%;
@@ -101,7 +101,6 @@ nav {
 }
 
 .logo {
-  border: 1px solid red;
   margin-left: 15px;
   font-weight: bold;
 }
@@ -111,7 +110,6 @@ nav {
   gap: 20px;
   list-style-type: none;
   margin-right: 15px;
-  border: 1px solid blue;
 }
 
 a {
@@ -137,6 +135,8 @@ a {
   margin-top: 10px;
   margin-right: 10%;
 }
+
+/* contact section */
 
 .contact {
   display: flex;
