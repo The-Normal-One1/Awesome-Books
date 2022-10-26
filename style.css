@@ -4,7 +4,8 @@
   box-sizing: border-box;
 }
 
-.container {
+.container,
+.all {
   display: flex;
   flex-direction: column;
   margin-top: 40px;
@@ -135,6 +136,13 @@ a {
   font-weight: bold;
 }
 
+.time {
+  display: flex;
+  justify-content: end;
+  margin-top: 10px;
+  margin-right: 10%;
+}
+
 .contact {
   display: flex;
   flex-direction: column;
@@ -165,6 +173,5 @@ footer {
   margin-left: 10%;
   margin-right: 10%;
   height: 40px;
-  position: relative;
-  top: 100%;
+  margin-top: 100px;
 }
