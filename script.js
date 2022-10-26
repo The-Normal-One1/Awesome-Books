@@ -127,11 +127,9 @@ const contactList = document.querySelector('.contact-list');
 const allSection = document.querySelector('.all');
 const inputSection = document.querySelector('#enter');
 const contactSection = document.querySelector('.contact');
-const copyRight = document.querySelector('.copy-right');
 const linksAll = document.querySelector('.list-link');
 const linksAdd = document.querySelector('.add-link');
 const linksContact = document.querySelector('.contact-link');
-
 
 bookList.addEventListener('click', (e) => {
   e.preventDefault();
@@ -162,7 +160,6 @@ contactList.addEventListener('click', (e) => {
   linksAdd.style.color = 'black';
   linksAll.style.color = 'black';
 });
-
 
 // timer
 const displayDate = () => {
