@@ -4,8 +4,83 @@
   box-sizing: border-box;
 }
 
-/* .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  } */
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+h1 {
+  align-self: center;
+  margin-bottom: 15px;
+}
+
+hr {
+  border: 1px solid black;
+  width: 20%;
+  align-self: center;
+  margin-bottom: 20px;
+}
+
+.table,
+th {
+  border: 1.5px solid rgb(110, 110, 110);
+  border-collapse: collapse;
+  box-shadow: 1px 2px black;
+}
+
+.table {
+  margin-bottom: 15px;
+}
+
+th {
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: rgb(170, 169, 169);
+}
+
+.remove-btn {
+  width: 100%;
+  height: 30px;
+  justify-self: flex-end;
+  border-color: black;
+  box-shadow: 2px 4px black;
+  margin-right: 0.625rem;
+}
+
+.remove-btn:hover {
+  cursor: pointer;
+}
+
+#enter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 50px;
+}
+
+#title,
+#author {
+  height: 25px;
+  padding: 5px;
+  border: 1px solid rgb(49, 49, 49);
+  box-shadow: 1px 2px black;
+}
+
+#submit {
+  width: 6rem;
+  border-color: black;
+  box-shadow: 2px 4px black;
+  align-self: flex-end;
+  height: 25px;
+}
+
+#submit:hover {
+  cursor: pointer;
+}

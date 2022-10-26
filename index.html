@@ -11,8 +11,8 @@
 
 <body>
     <div class="container">
-        <h1>Awosome Book Lists</h1>
-        <table>
+        <h1>Awosome Book</h1> <hr>
+        <table class="table">
             <thead>
                 <tr>
                     <th>Title</th>
@@ -21,14 +21,15 @@
                 </tr>
                 <thead> <br>
                 <tbody id="bookList"></tbody>
-        </table> <br>
-        <div id="enter">
-            <input type="text" id="inputTitle" placeholder="Title"></br><br>
-            <input type="text" id="inputAuthor" placeholder="Author"></br><br>
+        </table> <br> <hr>
+        <form id="enter">
+            <h1>Add books</h1>
+            <input type="text" id="title" placeholder="Title"></br>
+            <input type="text" id="author" placeholder="Author"></br>
             <div id=submit>
-                <button id="submit" type="button">Submit</button>
+                <button id="submit" type="submit">Submit</button>
             </div>
-        </div>
+        </form>
         <script src="script.js">
         </script>
 </body>
