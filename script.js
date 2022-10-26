@@ -118,3 +118,63 @@ document.querySelector('#bookList').addEventListener('click', (e) => {
   // remove books form store
   Store.removeBook(e.target.parentElement.previousElementSibling.textContent);
 });
+
+// for navigation bar
+const bookList = document.querySelector('.book-list');
+const addList = document.querySelector('.add-book');
+const contactList = document.querySelector('.contact-list');
+
+const allSection = document.querySelector('.all');
+const inputSection = document.querySelector('#enter');
+const contactSection = document.querySelector('.contact');
+const linksAll = document.querySelector('.list-link');
+const linksAdd = document.querySelector('.add-link');
+const linksContact = document.querySelector('.contact-link');
+
+bookList.addEventListener('click', (e) => {
+  e.preventDefault();
+  allSection.style.display = 'flex';
+  inputSection.style.display = 'none';
+  contactSection.style.display = 'none';
+  linksAll.style.color = 'blue';
+  linksAdd.style.color = 'black';
+  linksContact.style.color = 'black';
+});
+
+addList.addEventListener('click', (e) => {
+  e.preventDefault();
+  allSection.style.display = 'none';
+  inputSection.style.display = 'flex';
+  contactSection.style.display = 'none';
+  linksAdd.style.color = 'blue';
+  linksAll.style.color = 'black';
+  linksContact.style.color = 'black';
+});
+
+contactList.addEventListener('click', (e) => {
+  e.preventDefault();
+  allSection.style.display = 'none';
+  inputSection.style.display = 'none';
+  contactSection.style.display = 'flex';
+  linksContact.style.color = 'blue';
+  linksAdd.style.color = 'black';
+  linksAll.style.color = 'black';
+});
+
+// timer
+const displayDate = () => {
+  const date = new Date();
+  const options = {
+    weekday: undefined,
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  };
+  const [month, time] = [
+    date.toLocaleDateString(undefined, options),
+    date.toLocaleTimeString().toLocaleLowerCase(),
+  ];
+  document.querySelector('.time').innerHTML = `${month}, ${time}`;
+};
+displayDate();
+setInterval(displayDate, 1000);
